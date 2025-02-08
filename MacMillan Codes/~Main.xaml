@@ -1,0 +1,481 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>GlobalVariablesT1PNoYwrqg</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="810,4461" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap:VirtualizedContainerService.HintSize="620,4438" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="sd:DataTable" Name="WebFormData" />
+        <Variable x:TypeArguments="sd:DataTable" Name="dt_WebFormData" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dt_WebFormData]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="586,120" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="C:\Users\amr_youssef\Desktop\To Activiate.xlsx" />
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Chrome Login - Macmillan Education Everywhere" sap:VirtualizedContainerService.HintSize="586,4235" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="8645c69e-ca77-47a0-8620-917ab1676e77" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="552,3955" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_WebFormData]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="518,3893" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                <ui:ForEachRow.Body>
+                  <ActivityAction x:TypeArguments="sd:DataRow">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="484,3706" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Username'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="450,250" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="8645c69e-ca77-47a0-8620-917ab1676e77" Text="[CurrentRow(&quot;user&quot;).ToString]" Version="V4">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="identity.macmillaneducationeverywhere.com/authentication/login" CVScreenId="14fccdc8-080f-4cec-95ef-c7b7cda313cf" ContentHash="pVoJrq5P4kqnS1R4qMVLfA" CvElementArea="502, 317, 344, 51" CvType="InputBox" DesignTimeRectangle="504, 318, 340, 48" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='username' tag='INPUT' type='text' class='u-ax--setfocus u-form-control' placeholder='Enter username' aaname='Username' /&gt;" Guid="3539ee53-0045-4d5f-82b9-670b68f53910" InformativeScreenshot="f49bbaa86792331f2f018d1bfc1b50f3.png" IsResponsive="True" Reference="_2sUeFM9PEmAlfpT6_ACAQ/L5x8-pqpAkia0zVGJfsnbw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login - Macmillan Education Everywhere' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="14fccdc8-080f-4cec-95ef-c7b7cda313cf" CvTextArea="503, 290, 81, 15" CvTextArgument="Username" CvType="Text" DesignTimeRectangle="504, 286, 340, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='Username' check:innerText='Username' /&gt;" Guid="1406982b-0c1e-4e0c-be58-0a132ae2a757" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                      </uix:NTypeInto>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="450,286" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="8645c69e-ca77-47a0-8620-917ab1676e77" Text="[CurrentRow(&quot;pass&quot;).ToString]" Version="V4">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="identity.macmillaneducationeverywhere.com/authentication/login" CVScreenId="130de64b-2cf5-4a19-bc4e-548b44104e61" ContentHash="GMrfZeRHjEC59aP9tZyV7w" CvTextArea="562, 518, 117, 19" CvTextArgument="Enter password" CvType="Text" DesignTimeRectangle="550, 502, 340, 48" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FuzzySelectorArgument="&lt;webctrl id='password' tag='INPUT' type='password' class='u-form-control' placeholder='Enter password' aaname='Password' /&gt;" Guid="24cf4b7c-fb50-4af7-b631-9fcf96824006" InformativeScreenshot="edda470ebee4d93d2184e8e2f2b73990.png" Reference="_2sUeFM9PEmAlfpT6_ACAQ/a1WZxgfqsE6LP6m5qIHNhg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login - Macmillan Education Everywhere' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="130de64b-2cf5-4a19-bc4e-548b44104e61" CvTextArea="549, 474, 75, 15" CvTextArgument="Password" CvType="Text" DesignTimeRectangle="550, 470, 340, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='u-mt-15' tag='LABEL' type='' aaname='Password' check:innerText='Password' /&gt;" Guid="af8c06aa-fa4e-469f-b31e-e97d88730300" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                        <uix:NTypeInto.VerifyOptions>
+                          <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                            <uix:VerifyExecutionTypeIntoOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                          </uix:VerifyExecutionTypeIntoOptions>
+                        </uix:NTypeInto.VerifyOptions>
+                      </uix:NTypeInto>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Log in'" sap:VirtualizedContainerService.HintSize="450,225" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8645c69e-ca77-47a0-8620-917ab1676e77" Version="V4">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="identity.macmillaneducationeverywhere.com/authentication/login" CVScreenId="0f6229e3-caa0-40f7-9d15-73f8827cc45c" ContentHash="IlOzlGsOgUavVXME98eTYw" CvElementArea="549, 592, 342, 43" CvTextArea="695, 606, 49, 19" CvTextArgument="Log in" CvType="Button" DesignTimeRectangle="550, 594, 340, 40" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='u-button u-button-full-width u-button--primary' aaname='             Log in         ' check:innerText='Log in' /&gt;" Guid="4ff30266-bc47-4b6d-932d-c66575c27841" InformativeScreenshot="de3850325c6f61b294683c3b019669b5.png" Reference="_2sUeFM9PEmAlfpT6_ACAQ/WByZhUNR60ymd6v36cWP4A" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login - Macmillan Education Everywhere' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                        </uix:NClick.Target>
+                        <uix:NClick.VerifyOptions>
+                          <uix:VerifyExecutionOptions DisplayName="Button 'Button 'Log in''" Mode="Appears">
+                            <uix:VerifyExecutionOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionOptions.Retry>
+                            <uix:VerifyExecutionOptions.Target>
+                              <uix:TargetAnchorable BrowserURL="identity.macmillaneducationeverywhere.com/authentication/login" CVScreenId="0f6229e3-caa0-40f7-9d15-73f8827cc45c" ContentHash="B5P5htn7ekmVqVo2QfGaCg" CvElementArea="549, 592, 342, 43" CvTextArea="695, 606, 49, 19" CvTextArgument="Log in" CvType="Button" DesignTimeRectangle="550, 594, 340, 40" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='u-button u-button-full-width u-button--primary' aaname='             Log in         ' check:innerText='Log in' /&gt;" Guid="0320e071-d447-4595-acdf-fa9d38a1663a" InformativeScreenshot="de3850325c6f61b294683c3b019669b5.png" Reference="_2sUeFM9PEmAlfpT6_ACAQ/zG7XnGpwukif_IaE4MBkiw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login - Macmillan Education Everywhere' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                            </uix:VerifyExecutionOptions.Target>
+                            <uix:VerifyExecutionOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionOptions.Timeout>
+                          </uix:VerifyExecutionOptions>
+                        </uix:NClick.VerifyOptions>
+                      </uix:NClick>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Log in(2)'" sap:VirtualizedContainerService.HintSize="450,225" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8645c69e-ca77-47a0-8620-917ab1676e77" Version="V4">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="macmillaneducationeverywhere.com" CVScreenId="539a1d12-09be-45ff-8b70-f34ca9056084" ContentHash="ACHBmbYgWEODukSLwkqbyA" CvElementArea="612, 505, 214, 52" CvTextArea="690, 521, 59, 23" CvTextArgument="Log in" CvType="Button" DesignTimeRectangle="616, 508, 208, 46" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Log in' parentid='maincontent' tag='A' type='' class='u-button u-button--bordered-dark' check:innerText='Log in' /&gt;" Guid="94513653-c12b-4dba-ac9b-a633d7dd2dee" InformativeScreenshot="9097b322b28d45a6fbe10a4631a69488.png" Reference="_2sUeFM9PEmAlfpT6_ACAQ/QUcjumPqFEmrjWl5a6ZvRQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Macmillan Education Everywhere' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                        </uix:NClick.Target>
+                        <uix:NClick.VerifyOptions>
+                          <uix:VerifyExecutionOptions DisplayName="Label 'Label 'Log in''" Mode="Appears">
+                            <uix:VerifyExecutionOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionOptions.Retry>
+                            <uix:VerifyExecutionOptions.Target>
+                              <uix:TargetAnchorable BrowserURL="macmillaneducationeverywhere.com" CVScreenId="4844b582-6c22-418a-bb9f-293b72c57d9a" ContentHash="C68bRl7AOEifJ3Nu08a3AQ" CvElementArea="612, 505, 214, 52" CvTextArea="690, 521, 59, 23" CvTextArgument="Log in" CvType="Button" DesignTimeRectangle="616, 508, 208, 46" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Log in' parentid='maincontent' tag='A' type='' class='u-button u-button--bordered-dark' check:innerText='Log in' /&gt;" Guid="26c7c0bb-4a7a-4977-b3b8-0d6735195788" InformativeScreenshot="9097b322b28d45a6fbe10a4631a69488.png" Reference="_2sUeFM9PEmAlfpT6_ACAQ/ZMzasrpxB0G2f_MYI-yoBA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Macmillan Education Everywhere' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                            </uix:VerifyExecutionOptions.Target>
+                            <uix:VerifyExecutionOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionOptions.Timeout>
+                          </uix:VerifyExecutionOptions>
+                        </uix:NClick.VerifyOptions>
+                      </uix:NClick>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Username'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="450,250" sap2010:WorkflowViewState.IdRef="NTypeInto_9" ScopeIdentifier="8645c69e-ca77-47a0-8620-917ab1676e77" Text="[CurrentRow(&quot;user&quot;).ToString]" Version="V4">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="identity.macmillaneducationeverywhere.com/authentication/login" CVScreenId="14fccdc8-080f-4cec-95ef-c7b7cda313cf" ContentHash="pVoJrq5P4kqnS1R4qMVLfA" CvElementArea="502, 317, 344, 51" CvType="InputBox" DesignTimeRectangle="504, 318, 340, 48" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='username' tag='INPUT' type='text' class='u-ax--setfocus u-form-control' placeholder='Enter username' aaname='Username' /&gt;" Guid="3539ee53-0045-4d5f-82b9-670b68f53910" InformativeScreenshot="f49bbaa86792331f2f018d1bfc1b50f3.png" IsResponsive="True" Reference="_2sUeFM9PEmAlfpT6_ACAQ/L5x8-pqpAkia0zVGJfsnbw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login - Macmillan Education Everywhere' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="14fccdc8-080f-4cec-95ef-c7b7cda313cf" CvTextArea="503, 290, 81, 15" CvTextArgument="Username" CvType="Text" DesignTimeRectangle="504, 286, 340, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='Username' check:innerText='Username' /&gt;" Guid="1406982b-0c1e-4e0c-be58-0a132ae2a757" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                      </uix:NTypeInto>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="450,286" sap2010:WorkflowViewState.IdRef="NTypeInto_10" ScopeIdentifier="8645c69e-ca77-47a0-8620-917ab1676e77" Text="[CurrentRow(&quot;pass&quot;).ToString]" Version="V4">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="identity.macmillaneducationeverywhere.com/authentication/login" CVScreenId="130de64b-2cf5-4a19-bc4e-548b44104e61" ContentHash="GMrfZeRHjEC59aP9tZyV7w" CvTextArea="562, 518, 117, 19" CvTextArgument="Enter password" CvType="Text" DesignTimeRectangle="550, 502, 340, 48" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FuzzySelectorArgument="&lt;webctrl id='password' tag='INPUT' type='password' class='u-form-control' placeholder='Enter password' aaname='Password' /&gt;" Guid="24cf4b7c-fb50-4af7-b631-9fcf96824006" InformativeScreenshot="edda470ebee4d93d2184e8e2f2b73990.png" Reference="_2sUeFM9PEmAlfpT6_ACAQ/a1WZxgfqsE6LP6m5qIHNhg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login - Macmillan Education Everywhere' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="130de64b-2cf5-4a19-bc4e-548b44104e61" CvTextArea="549, 474, 75, 15" CvTextArgument="Password" CvType="Text" DesignTimeRectangle="550, 470, 340, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='u-mt-15' tag='LABEL' type='' aaname='Password' check:innerText='Password' /&gt;" Guid="af8c06aa-fa4e-469f-b31e-e97d88730300" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                        <uix:NTypeInto.VerifyOptions>
+                          <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                            <uix:VerifyExecutionTypeIntoOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                          </uix:VerifyExecutionTypeIntoOptions>
+                        </uix:NTypeInto.VerifyOptions>
+                      </uix:NTypeInto>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Log in(3)'" sap:VirtualizedContainerService.HintSize="450,225" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8645c69e-ca77-47a0-8620-917ab1676e77" Version="V4">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="identity.macmillaneducationeverywhere.com/authentication/login" CVScreenId="609c27a0-a499-4c12-9ffb-36d824cec558" ContentHash="-Lji-z7V4EqtbEOVinX3kQ" CvElementArea="548, 540, 344, 44" CvTextArea="695, 554, 48, 19" CvTextArgument="Log in" CvType="Button" DesignTimeRectangle="550, 542, 340, 40" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='u-button u-button-full-width u-button--primary' aaname='             Log in         ' check:innerText='Log in' /&gt;" Guid="ad44bc59-a213-4ca1-bf1f-07f8425efbf2" InformativeScreenshot="1329f48afe16ef12d8371cfe5cde3b13.png" Reference="_2sUeFM9PEmAlfpT6_ACAQ/LDKSKmf9AE-Gv6uxNcghOA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login - Macmillan Education Everywhere' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                        </uix:NClick.Target>
+                        <uix:NClick.VerifyOptions>
+                          <uix:VerifyExecutionOptions DisplayName="Button 'Button 'Log in'(1)'" Mode="Appears">
+                            <uix:VerifyExecutionOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionOptions.Retry>
+                            <uix:VerifyExecutionOptions.Target>
+                              <uix:TargetAnchorable BrowserURL="identity.macmillaneducationeverywhere.com/authentication/login" CVScreenId="1f601304-c6a7-4ee2-9f55-6ef8701dcf42" ContentHash="D_b5QBZ1KkCVgXp_ZVGtqA" CvElementArea="548, 540, 344, 44" CvTextArea="695, 554, 48, 19" CvTextArgument="Log in" CvType="Button" DesignTimeRectangle="550, 542, 340, 40" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='u-button u-button-full-width u-button--primary' aaname='             Log in         ' check:innerText='Log in' /&gt;" Guid="557865d8-acde-4307-80cd-5e71e76f8689" InformativeScreenshot="de3850325c6f61b294683c3b019669b5.png" Reference="_2sUeFM9PEmAlfpT6_ACAQ/K_DciMuxLkipC8VOylbyig" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login - Macmillan Education Everywhere' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                            </uix:VerifyExecutionOptions.Target>
+                            <uix:VerifyExecutionOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionOptions.Timeout>
+                          </uix:VerifyExecutionOptions>
+                        </uix:NClick.VerifyOptions>
+                      </uix:NClick>
+                      <If Condition="[isActivateCodeFound = True]" sap:VirtualizedContainerService.HintSize="450,722" sap2010:WorkflowViewState.IdRef="If_1">
+                        <If.Then>
+                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,276" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Activate code'" sap:VirtualizedContainerService.HintSize="382,216" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8645c69e-ca77-47a0-8620-917ab1676e77" Version="V4">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="macmillaneducationeverywhere.com" CVScreenId="4e728486-ce1d-4e52-b7d2-d198758298a2" ContentHash="-E_-_YlQ5k6-PCuQDUuo1A" CvElementArea="1192, 237, 193, 50" CvTextArea="1236, 251, 133, 20" CvTextArgument="Activate code" CvType="Button" DesignTimeRectangle="1193, 239, 188, 46" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='page-title' tag='A' type='' class='u-button u-button--primary u-ml-auto u-button__add-book' aaname='         Activate code' check:innerText='Activate code' /&gt;" Guid="70315ca2-4a6a-48f4-9cde-f2096cb4913d" InformativeScreenshot="2a8f94cb2abbf785576b59284d5e0a55.png" Reference="_2sUeFM9PEmAlfpT6_ACAQ/VJy28GKVIUWblmtOCOHkQw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='My Bookshelf - Macmillan Education Everywhere' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target CVScreenId="4e728486-ce1d-4e52-b7d2-d198758298a2" CvElementArea="1192, 237, 193, 50" CvType="Button" DesignTimeRectangle="1206, 250, 24, 24" FuzzySelectorArgument="&lt;webctrl parentid='page-title' tag='I' type='' class='icon-svg icon-svg-add-course' aaname='' /&gt;" Guid="d8c04bbb-8aa1-4c81-a4a3-c87b231ceaf9" SearchSteps="FuzzySelector, CV" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NClick.Target>
+                              <uix:NClick.VerifyOptions>
+                                <uix:VerifyExecutionOptions DisplayName="Label 'Label 'Activate code''" Mode="Appears">
+                                  <uix:VerifyExecutionOptions.Retry>
+                                    <InArgument x:TypeArguments="x:Boolean" />
+                                  </uix:VerifyExecutionOptions.Retry>
+                                  <uix:VerifyExecutionOptions.Target>
+                                    <uix:TargetAnchorable BrowserURL="macmillaneducationeverywhere.com" CVScreenId="217af977-5013-4923-8cd8-8af436adcca7" ContentHash="eFSZuZUL9US5sYewvK-1yA" CvElementArea="1192, 237, 193, 50" CvTextArea="1236, 251, 133, 20" CvTextArgument="Activate code" CvType="Button" DesignTimeRectangle="1193, 239, 188, 46" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='page-title' tag='A' type='' class='u-button u-button--primary u-ml-auto u-button__add-book' aaname='         Activate code' check:innerText='Activate code' /&gt;" Guid="6b860fbc-9bbc-46a7-8968-a9e255c5055b" InformativeScreenshot="9027867862f4f761cb7794191301e855.png" Reference="_2sUeFM9PEmAlfpT6_ACAQ/GPQTgJAvgEePFvtW_RyOQg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='My Bookshelf - Macmillan Education Everywhere' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                  </uix:VerifyExecutionOptions.Target>
+                                  <uix:VerifyExecutionOptions.Timeout>
+                                    <InArgument x:TypeArguments="x:Double" />
+                                  </uix:VerifyExecutionOptions.Timeout>
+                                </uix:VerifyExecutionOptions>
+                              </uix:NClick.VerifyOptions>
+                            </uix:NClick>
+                          </Sequence>
+                        </If.Then>
+                        <If.Else>
+                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,276" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Activate code 2'" sap:VirtualizedContainerService.HintSize="382,216" sap2010:WorkflowViewState.IdRef="NClick_19" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8645c69e-ca77-47a0-8620-917ab1676e77" Version="V4">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="macmillaneducationeverywhere.com" CVScreenId="a8dfb624-d8e2-45e0-be1f-406856d475fb" ContentHash="PTxwLEFpmkmEQXnjioVM_Q" CvElementArea="748, 604, 47, 52" CvTextArea="770, 633, 21, 20" CvType="Icon" DesignTimeRectangle="749, 608, 45, 45" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl parentid='maincontent' tag='I' type='' class='icon-svg icon-svg-add-book' aaname='' /&gt;" Guid="6048c2ae-a4b7-47ea-950a-a16ae1670e0a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADEAAAAxCAYAAABznEEcAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAN9SURBVGhD7ZlLKG1RGMcvRSIxMZFXFAOMvMtj4FEMRMlIBh53Qhl4ZKAUBoxEUsJAykAKKQykJDEx0L1St25Sut3BjYHHgPjf9XU+7X322ss5Z++zN+FX/8n6Hmv9zzl7n7XX/oYPwOcy8e8fMD8PfP8O5OSIQlEZLGVlAc3NwNQUcHHBEwaAaOGb9XUgLk6e3AlFRgKTk8DzM0/uB6JMze0t0NgoT+SGSkqAP394IT4Q6Wra2+XmpKgooLgYKCuzr9JSIDbWfB6K+YNINWd7W27a0AAcHnJCkDk5Adra5DknJjjhFUSazNUVEB/v3WxpiYMOQx+Sft6ICODXLw4qEGkyc3PejZqaOOASQ0Pe8/f3c0CBSJHp6/NucnzMAZegG4p+/vp6DigQKTJ1dVqD0FDg4YEDLpKSoq0hM5MHFZiaKCjQGiQm8qDLVFRoa4iJ4UEFpiby8rQGCQk86DKVldoaoqN5UIFlE79/A7m5QFiYdaWmAjs73NCAKya6urQcO6qq4oYGXDExPKzl2JHq9u2KCYJuxbW11kU74utrbmbANRNO8mWC+FQmRkY8T2RW1dur3g24YmJsTMuxo5YWbmjAFROdnVqOHZWXc0MDrpj4+RPIyNDyrIie2zc2uKEBVy/suzvreg39N03reQ1TE/n5WoOkJB50GXpcLSoC0tKA1VUeVGBqIpBv4j1gy8TZGbC56VtbW8DjIxc5gGUTa2tajj+iUz7VgdjoKJCdDXR08ECAiPYy/pigzZt+kf5od5eLdfz44Z2zsMCBABBlMv6YWFzUcvwRHQHd3HCxjv1977zxcQ4EgCiT8feaoE+Wjnd8iQ6iLy+5yMCbmwgGXyYYUSbzZULB8rJn626U8eS9psY8b2aGG5kgymSCbYIubP1CrYpOWMwQIRl6iH8pDA8Hnp44YJFgbdsLC7mhARGSGRz0Lj495YBF9vY8R/T6nlY0Pc0NDYiQjHFL0drKARvQOw86XTfK+FPr7jbPOz/nRiaIMhl6g6lvTKIL0wkcuzsR9GpL3zwkBOjpCf4xv6Mm6MmL3gvoJyDRMXt1NTAw4Ll2VKLbIv0MfOGoCYLelSUne08SqI6OuJkCx00Q9/f2TsBnZ7mRAldMvEA7Vnre1k/oS+np6t3rC3//ev6LXmro1XOgiLK35+DAc8K+ssIDAfIuTNjlA5gA/gMHJjA9RBOaogAAAABJRU5ErkJggg==" InformativeScreenshot="577248d05e93ce19324697e265ea96a6.png" Reference="_2sUeFM9PEmAlfpT6_ACAQ/r3cuehaDV0OsgdHofmLHPQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='My Bookshelf - Macmillan Education Everywhere' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                      <uix:Target CVScreenId="a8dfb624-d8e2-45e0-be1f-406856d475fb" CvTextArea="697, 677, 148, 22" CvTextArgument="Activate code" CvType="Text" DesignTimeRectangle="157, 673, 1229, 31" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='H5' type='' class='text-center font-weight-bold' aaname='Activate code' check:innerText='Activate code' /&gt;" Guid="03004dca-2595-4c94-b8ff-0ab9199f766f" SearchSteps="FuzzySelector, CV" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NClick.Target>
+                              <uix:NClick.VerifyOptions>
+                                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                  <uix:VerifyExecutionOptions.Retry>
+                                    <InArgument x:TypeArguments="x:Boolean" />
+                                  </uix:VerifyExecutionOptions.Retry>
+                                  <uix:VerifyExecutionOptions.Timeout>
+                                    <InArgument x:TypeArguments="x:Double" />
+                                  </uix:VerifyExecutionOptions.Timeout>
+                                </uix:VerifyExecutionOptions>
+                              </uix:NClick.VerifyOptions>
+                            </uix:NClick>
+                          </Sequence>
+                        </If.Else>
+                      </If>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Please enter your acces…'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="450,286" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="8645c69e-ca77-47a0-8620-917ab1676e77" Text="[CurrentRow(&quot;Activiation_Code&quot;).ToString]" Version="V4">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="macmillaneducationeverywhere.com/projects/activate-course" CVScreenId="1e652991-7949-4d37-8bb2-747b8b34488b" ContentHash="WJ1M6BuNuU-R-IyHzD28Ug" CvElementArea="572, 440, 284, 52" CvType="InputBox" DesignTimeRectangle="574, 442, 280, 48" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='activationCode_id' tag='INPUT' type='text' class='u-ax--setfocus u-form-control u-text-bold ' aaname='Please enter your access code below' /&gt;" Guid="d4c5f66f-2a13-4056-93a3-3f3d07488818" InformativeScreenshot="eedb8313318bdd06ab98dff2aa49a2ec.png" IsResponsive="True" Reference="_2sUeFM9PEmAlfpT6_ACAQ/MlS4Ca94DES4T-K6rTGJ2Q" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Activate Code - Macmillan Education Everywhere' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="1e652991-7949-4d37-8bb2-747b8b34488b" CvTextArea="573, 414, 283, 15" CvTextArgument="Please enter your access code below" CvType="Text" DesignTimeRectangle="574, 410, 281, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='u-form-label c-code-label' aaname='Please enter your access code below' check:innerText='Please enter your access code below' /&gt;" Guid="6cf6b82b-d8b4-40d9-8578-094882ad62ef" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                        <uix:NTypeInto.VerifyOptions>
+                          <uix:VerifyExecutionTypeIntoOptions DisplayName="Input 'Please enter your acces…'" Mode="Appears">
+                            <uix:VerifyExecutionTypeIntoOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <uix:VerifyExecutionTypeIntoOptions.Target>
+                              <uix:TargetAnchorable BrowserURL="macmillaneducationeverywhere.com/projects/activate-course" CVScreenId="4a5f4634-b450-46dc-971e-28e8c2c43b0e" ContentHash="LFFduLybPESTS7OJjqj_Sw" CvElementArea="572, 440, 284, 52" CvType="InputBox" DesignTimeRectangle="574, 442, 280, 48" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='activationCode_id' tag='INPUT' type='text' class='u-ax--setfocus u-form-control u-text-bold ' aaname='Please enter your access code below' /&gt;" Guid="39ea7ea8-f7b7-4d2a-a9d0-830e745748ed" InformativeScreenshot="629f980c7709bdff27047e1358488a97.png" IsResponsive="True" Reference="_2sUeFM9PEmAlfpT6_ACAQ/Q8JxDnwuB0eAqiL4VqRF9Q" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Activate Code - Macmillan Education Everywhere' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CVScreenId="4a5f4634-b450-46dc-971e-28e8c2c43b0e" CvTextArea="573, 414, 283, 15" CvTextArgument="Please enter your access code below" CvType="Text" DesignTimeRectangle="574, 410, 281, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='u-form-label c-code-label' aaname='Please enter your access code below' check:innerText='Please enter your access code below' /&gt;" Guid="1596f72c-38fe-49c6-9ff4-ea5f03e1098f" SearchSteps="FuzzySelector, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:VerifyExecutionTypeIntoOptions.Target>
+                            <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                          </uix:VerifyExecutionTypeIntoOptions>
+                        </uix:NTypeInto.VerifyOptions>
+                      </uix:NTypeInto>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Activate code(1)'" sap:VirtualizedContainerService.HintSize="450,225" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8645c69e-ca77-47a0-8620-917ab1676e77" Version="V4">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="macmillaneducationeverywhere.com/projects/activate-course" CVScreenId="1e652991-7949-4d37-8bb2-747b8b34488b" ContentHash="UMEUBkvMvkC6A94hcS9-Iw" CvElementArea="623, 611, 211, 51" CvTextArea="661, 626, 133, 20" CvTextArgument="Activate code" CvType="Button" DesignTimeRectangle="624, 614, 208, 46" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='u-button u-button--primary' aaname='Activate code' check:innerText='Activate code' /&gt;" Guid="eb5baf4a-703e-45de-b7ec-6234194382ef" InformativeScreenshot="749afbdb74e1671a3d728d09e280250c.png" Reference="_2sUeFM9PEmAlfpT6_ACAQ/iHa4iXl_zEqcq1l76dAk7A" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Activate Code - Macmillan Education Everywhere' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                        </uix:NClick.Target>
+                        <uix:NClick.VerifyOptions>
+                          <uix:VerifyExecutionOptions DisplayName="Label 'Label 'Close'(1)'" Mode="Appears">
+                            <uix:VerifyExecutionOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionOptions.Retry>
+                            <uix:VerifyExecutionOptions.Target>
+                              <uix:TargetAnchorable BrowserURL="macmillaneducationeverywhere.com/projects/activate-course" CVScreenId="4a5f4634-b450-46dc-971e-28e8c2c43b0e" ContentHash="9KVRj5TFwU6Inv3ScbBF2w" CvTextArea="84, 182, 50, 19" CvTextArgument="Close" CvType="Text" DesignTimeRectangle="82, 177, 52, 30" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='SPAN' type='' class='' aaname='Close' check:innerText='Close' /&gt;" Guid="0a5f3d37-27c9-4026-945e-d47e4b48d80c" InformativeScreenshot="745c02781d783132f41edd78a76c58b8.png" Reference="_2sUeFM9PEmAlfpT6_ACAQ/oN0DJtooL02D0m6iZn9FHg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Activate Code - Macmillan Education Everywhere' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CVScreenId="4a5f4634-b450-46dc-971e-28e8c2c43b0e" CvElementArea="58, 180, 24, 24" CvTextArea="60, 182, 19, 19" CvType="Icon" DesignTimeRectangle="58, 180, 24, 24" FuzzySelectorArgument="&lt;webctrl tag='I' type='' class='icon-svg icon-svg-close' aaname='' /&gt;" Guid="b8c9ab05-cd70-422e-8125-ab729d951b1b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE6SURBVEhL7ZVNaoNAFMfnJoqKiuLODxRXPUIhR8myFyndtrfotpcoZCWOILjN8iX/YQKhOh8maRZtfjAY3pt5v+Q5M2F0Zx7Cm/OPhVVVUZIkNAyDjJjB3DiOqW1bGZmjFBZFQYwx8n2f+r6XUTWYg7lYU9e1jM5RCvFtPc8TBfDsuk5m5iB3mhtFkbYr2neIhSiAQo7jLEoRQ+4kG8dRZpbYmzcNCqik62RHvt/MQrAkXS07snt9shMCFMSuhcB1XTHwOcsyKxna+bll9kJw/ksx0jSlaZpk1gSn980FQkjuIlS1FFK7lhJ9vVgKz1t5zabhH89moe4srpaajoXNbbNOqjn4P2W66wrSq6+2PM9FgTAMrS/vIAjEmqZpZHSOUliWpZBxzmXEDKRYc9Hf02/xEN6cvy4kOgCKVDB76G8HoAAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:VerifyExecutionOptions.Target>
+                            <uix:VerifyExecutionOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionOptions.Timeout>
+                          </uix:VerifyExecutionOptions>
+                        </uix:NClick.VerifyOptions>
+                      </uix:NClick>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Close'" sap:VirtualizedContainerService.HintSize="450,225" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8645c69e-ca77-47a0-8620-917ab1676e77" Version="V4">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="macmillaneducationeverywhere.com/projects/activate-course" CVScreenId="1e652991-7949-4d37-8bb2-747b8b34488b" ContentHash="DJdHD3neE0SilAD9A4XkVQ" CvTextArea="84, 182, 50, 19" CvTextArgument="Close" CvType="Text" DesignTimeRectangle="82, 177, 52, 30" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='SPAN' type='' class='' aaname='Close' check:innerText='Close' /&gt;" Guid="4620ffa5-356b-4650-82ef-49e8176af8f1" InformativeScreenshot="745c02781d783132f41edd78a76c58b8.png" Reference="_2sUeFM9PEmAlfpT6_ACAQ/gUvuL54kiUWJvbJD7i3qzw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Activate Code - Macmillan Education Everywhere' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="1e652991-7949-4d37-8bb2-747b8b34488b" CvElementArea="58, 180, 24, 24" CvTextArea="60, 182, 19, 19" CvType="Icon" DesignTimeRectangle="58, 180, 24, 24" FuzzySelectorArgument="&lt;webctrl tag='I' type='' class='icon-svg icon-svg-close' aaname='' /&gt;" Guid="ab4b8d4f-c43a-4789-94a5-52517f821c93" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE6SURBVEhL7ZVNaoNAFMfnJoqKiuLODxRXPUIhR8myFyndtrfotpcoZCWOILjN8iX/YQKhOh8maRZtfjAY3pt5v+Q5M2F0Zx7Cm/OPhVVVUZIkNAyDjJjB3DiOqW1bGZmjFBZFQYwx8n2f+r6XUTWYg7lYU9e1jM5RCvFtPc8TBfDsuk5m5iB3mhtFkbYr2neIhSiAQo7jLEoRQ+4kG8dRZpbYmzcNCqik62RHvt/MQrAkXS07snt9shMCFMSuhcB1XTHwOcsyKxna+bll9kJw/ksx0jSlaZpk1gSn980FQkjuIlS1FFK7lhJ9vVgKz1t5zabhH89moe4srpaajoXNbbNOqjn4P2W66wrSq6+2PM9FgTAMrS/vIAjEmqZpZHSOUliWpZBxzmXEDKRYc9Hf02/xEN6cvy4kOgCKVDB76G8HoAAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                        <uix:NClick.VerifyOptions>
+                          <uix:VerifyExecutionOptions DisplayName="Label 'Label 'Log out''" Mode="Appears">
+                            <uix:VerifyExecutionOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionOptions.Retry>
+                            <uix:VerifyExecutionOptions.Target>
+                              <uix:TargetAnchorable BrowserURL="macmillaneducationeverywhere.com/projects/activate-course" CVScreenId="ea3d9b88-6cf4-409d-a757-30eccdf6ccfb" ContentHash="j9Xiccv2e0y1GxQzMRLCfg" CvTextArea="81, 182, 53, 19" CvType="AnyWordGroup" DesignTimeRectangle="82, 177, 52, 30" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='SPAN' type='' class='' /&gt;" Guid="b6291a6f-340f-457a-b001-2ba7994df027" InformativeScreenshot="946db78f7f119de71db27cb7f3bbf9cb.png" Reference="_2sUeFM9PEmAlfpT6_ACAQ/W2yYlOJh2U6rDuvhTMsRTw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Activate Code - Macmillan Education Everywhere' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CVScreenId="ea3d9b88-6cf4-409d-a757-30eccdf6ccfb" CvElementArea="58, 180, 23, 24" CvTextArea="60, 182, 19, 19" CvType="Icon" DesignTimeRectangle="58, 180, 24, 24" FuzzySelectorArgument="&lt;webctrl tag='I' type='' class='icon-svg icon-svg-close' aaname='' /&gt;" Guid="30259777-f38d-4f4d-93bd-db0ad7c094f9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE6SURBVEhL7ZVNaoNAFMfnJoqKiuLODxRXPUIhR8myFyndtrfotpcoZCWOILjN8iX/YQKhOh8maRZtfjAY3pt5v+Q5M2F0Zx7Cm/OPhVVVUZIkNAyDjJjB3DiOqW1bGZmjFBZFQYwx8n2f+r6XUTWYg7lYU9e1jM5RCvFtPc8TBfDsuk5m5iB3mhtFkbYr2neIhSiAQo7jLEoRQ+4kG8dRZpbYmzcNCqik62RHvt/MQrAkXS07snt9shMCFMSuhcB1XTHwOcsyKxna+bll9kJw/ksx0jSlaZpk1gSn980FQkjuIlS1FFK7lhJ9vVgKz1t5zabhH89moe4srpaajoXNbbNOqjn4P2W66wrSq6+2PM9FgTAMrS/vIAjEmqZpZHSOUliWpZBxzmXEDKRYc9Hf02/xEN6cvy4kOgCKVDB76G8HoAAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:VerifyExecutionOptions.Target>
+                            <uix:VerifyExecutionOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionOptions.Timeout>
+                          </uix:VerifyExecutionOptions>
+                        </uix:NClick.VerifyOptions>
+                      </uix:NClick>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Log out(1)'" sap:VirtualizedContainerService.HintSize="450,225" sap2010:WorkflowViewState.IdRef="NClick_16" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8645c69e-ca77-47a0-8620-917ab1676e77" Version="V4">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="macmillaneducationeverywhere.com" CVScreenId="4aebd372-5f8b-40f5-94c6-22c38e02dba0" ContentHash="h_DEMRIFF0KVCZBCcMw7ng" CvTextArea="34, 425, 52, 16" CvTextArgument="Log out" CvType="Text" DesignTimeRectangle="13, 421, 93, 21" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Log out' class='c-sidebar__link-name' parentid='sidebar-menu' tag='SPAN' type='' check:innerText='Log out' /&gt;" Guid="88d326ea-8b36-4911-aa36-6feace6bf4c6" InformativeScreenshot="b4c0556f4818acb374cc22bb4d27f52d.png" Reference="_2sUeFM9PEmAlfpT6_ACAQ/hXR199VTYU2l4lcUWnLIMA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='My Bookshelf - Macmillan Education Everywhere' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target CVScreenId="4aebd372-5f8b-40f5-94c6-22c38e02dba0" CvElementArea="45, 393, 29, 30" CvType="Icon" DesignTimeRectangle="48, 396, 24, 24" FuzzySelectorArgument="&lt;webctrl type='' class='c-sidebar__icon icon-svg icon-svg-logout icon-svg--24' parentid='sidebar-menu' tag='I' aaname='' /&gt;" Guid="051c7b7a-2d14-45d1-98f3-21fa6ccb8c8f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALMSURBVEhLzZbNS3JBFMa1SAWpQCVKKKgWgYEtyojAalGBraJVRVAJpev6B8IWEa0yF+bCjS6sf6CgIGrjwrXRpoI+6YN2JYrxvMy5x+S+19u90ku8PxjQZ86cR8YzM8eAX+b/M3x5ecH29jZGR0fR0dEBs9kMu92Onp4eLC0t4ejoCJ+fnxytjarhxcUF5ubmUFtbC4PB8O1ob29HNBpFoVDg1epUNNzY2IDRaKRkDQ0N8Pv92NvbQzabxfv7O+7v73F2dob19XX09fV9GXd3d+P6+pqzVEZhKLaplEB8FluqRTKZREtLC61pbGxEJpPhGSUKQ6fTCZPJhP39fVb08fT0hOHhYTJtbW3F6+srz8hRGF5eXuLq6oq/VYf4D4eGhsjU5/OxKke1aP5mYmIC/f39moXx9vaG5uZmMj08PGS1jG7DkZERShIMBllRJxKJUKzH42GljG7Du7s7On8iUTweZ7Uy+Xwe9fX1FHtzc8OqhG5DwcnJCR2Xuro6pNNpViszOTlJhru7u6xIVGUoWFtbo0RNTU1UmWpsbm5S3OrqKisSMkOXy0VBeoeoSDUSiQTFzMzMsCIhM+zq6lIk/W782FAP4joTibS2dGtri+JWVlZYkai6aGpqanQVzfT0NBnGYjFWJHQbVnMsPj4+YLVaKfb29pZVCd2Gg4ODlCAQCLCiTmk7f3Twe3t7MTU1pXm1PT8/w2azkeHBwQGrZRSGP7m8xQ0zMDBAZuPj46zKURiWnifxxlWDeDe9Xi+ZORwOPD4+8owcheHy8jItEmNhYeHb0i+RSqXoh4o1FosFx8fHPKOk4n8oWoySqWgxFhcX6UEWLYaoQNFinJ6eIhQKyVqMzs5OnJ+fc5bKqBaNSD47O6uriWpra8POzg5yuRyvVkfVsMTDwwPC4TDGxsa+2kRRhW63G/Pz89QmFotFjtZG0/Bf88uGwB/f7Ge8f7NdgwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                        <uix:NClick.VerifyOptions>
+                          <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                            <uix:VerifyExecutionOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionOptions.Retry>
+                            <uix:VerifyExecutionOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionOptions.Timeout>
+                          </uix:VerifyExecutionOptions>
+                        </uix:NClick.VerifyOptions>
+                      </uix:NClick>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Log in(4)'" sap:VirtualizedContainerService.HintSize="450,216" sap2010:WorkflowViewState.IdRef="NClick_17" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8645c69e-ca77-47a0-8620-917ab1676e77" Version="V4">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="macmillaneducationeverywhere.com" CVScreenId="c942afa9-912d-4aef-81cc-bb5fa336f3a3" ContentHash="-yK-EhNcUEOSIQLNc2sUYA" CvElementArea="613, 605, 214, 51" CvTextArea="690, 621, 59, 23" CvTextArgument="Log in" CvType="Button" DesignTimeRectangle="616, 608, 208, 46" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Log in' parentid='maincontent' tag='A' type='' class='u-button u-button--bordered-dark' check:innerText='Log in' /&gt;" Guid="b6e6fafb-2ed0-495c-96c6-200c3c140265" InformativeScreenshot="9097b322b28d45a6fbe10a4631a69488.png" Reference="_2sUeFM9PEmAlfpT6_ACAQ/AbtPKkfE7kCz6jVy91WxTQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Macmillan Education Everywhere' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                        </uix:NClick.Target>
+                        <uix:NClick.VerifyOptions>
+                          <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                            <uix:VerifyExecutionOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionOptions.Retry>
+                            <uix:VerifyExecutionOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionOptions.Timeout>
+                          </uix:VerifyExecutionOptions>
+                        </uix:NClick.VerifyOptions>
+                      </uix:NClick>
+                    </Sequence>
+                  </ActivityAction>
+                </ui:ForEachRow.Body>
+              </ui:ForEachRow>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-8, -8, 1456, 868" BrowserType="Chrome" ContentHash="-Xo7GmGGKEWz110LHgzPUw" IconBase64="iVBORw0KGgoAAAANSUhEUgAAAJYAAACLCAYAAACDSWCnAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAABp5SURBVHhe7Z0J9BXjG8f5W0NF1rJnzRaVOJI9IsIREZH9xHFslSUlu+w5JYdkF7KTJfuxlJ0UIfseiZDd/M/n1Xd67vzm7jP3ztx7v+c83V/3zrzzvN/5vs+8864LeCnFv//+6/3zzz/e33//7f3111/ub76z4P+5fm8gPqRKWFZMuZBLQJzbEFj8SIWwsonp/fff98aPH+8NGzbM69evn7f99tt7m266qde+fXtvs80287p16+Ydc8wx3qhRo7wpU6bMO+s/kGYD8SHRwuLmWwHwSHvhhRe8oUOHel26dPGWWGIJb4EFFijIFl10UW+77bbzxo0b56eZL/KlDURiRfWg6bdKIZHCEhnChx9+6A0fPtzr1KmT97///S9DMPx/4YUX9hZaaCFn/F+m7zB7DgJ78803XdppFpdERB4sX7lQ7PGlIlHCIrM2w5MnT/YOO+wwb5lllskQhsSy4IILZnyfyzjWiqxFixbeXXfd5a6TNnFJHGGYNWuW99FHH3lTp071Xn/9dVeAqDJ88803Tc7JlU65SISwKHk2g88//7y3zz77ZEQa/iYKFSOmbEaE45M0eTSCpItLHNnHGf9HOGPGjHEFcNttt/XWWGMNV0VYZJFFXD75XHzxxb2VVlrJ23LLLV1d9LrrrvNmzJgxL5X5kS9KVFVYQUG9/fbb3oEHHthEUFGIKWgSKTdh0qRJ7vpRkxsF4Ii6pQVi4oWlc+fOTjRh+ctnLVu29Hr16uU99thj81L9T6hWuOWgasKyN/H777/3Bg0a5DVv3tzPeFyCsiYBt2vXzpszZ47zKSpio4AtdIjr3nvv9Xr06OEttthiTfIhU4EJM3ucPX+PPfbw3njjjXlX+k/M5aLiwrJRCrJGjhzprbPOOhkkQYLNeJymx+KAAQOcT0mIWnAkP3799Vdv9OjR7jFm/bYist8XahKazl9qqaXc27aiY7k8VFRYNiK8+uqrrk6gjFZaUDKuyQ1q1qyZ99577znfqikuG6V4uaBNzvoaB0+kqb+JiLNnz3bXL4eHiglLhPFJ0wElRJnixipj1TARe9JJJ/k+Vho2kn/33XfeUUcdleFf3BwhVir6/L311lt7P/zwg/OlVHHFLixLGG8iu+yyi58ZW1Kqabppq6yyivfTTz85XxVZKwEbyR999FFv7bXXdv4omlpf4zZVDei1+P333zN8KwaxCss6RVjnlRenEVTU4bxc0w28//77nb+Vilq6DjxRx5EfusHVMF2b7jBQChexCUvO8HnKKaf4TiclSgUNMhF7//79fb/jhq7Bo2/vvfd2flQjSgUNHyQu+mJBsXzEIiy9WXz11VeuMihnq01YLpNvm2yyie9/nI9DXePdd9911+TaErf1q1oGH/hC9YDmILgoho/IhSXCeOtbb731nJNJIiybyT/eDukSAeW8FeWCOHryySe9Nm3auOsqQiTJynmpiUxYqFkXvvvuu72ll146w7k0mKLWhAkTXD6ifhxaju644w5/dEZSOdJTZskll3QvXvhfaGGLRFj2giNGjPAdS5OoMEUN8gAUWaKAFRWNwoqQSa4eYLqHxx9/vPO90MJWtrAgDAOnnnqqcwKykk5YmInEE044weUnqohlORoyZIi7hqKBvX4SDT+x5Zdf3ps5c6bLg/KSC2UJS1GKz8MPP9w5ws1RaUybSVg9e/Z0+YpCWOKIm8EbJ+kjqDRxJF6uvvpql5dCInnJwhJhf/zxh9e7d2934SRWQIsxEbjNNtu4vBVSMnNBwvztt9+8/fff379G2gqefN5pp51cfmKLWBLVL7/84u2+++7u4mkXFaZHU8eOHTMiTSmQqOh3U29DWjlSQeBlo9A35qKFpQR//vlnb+edd3YXrAVRYRLWBhts4LozQCnC0qPik08+cWOmSLNWojmDCkG+x2FRwqplUWESFn11RGNQrLBEOLOC1OdXCxxJWH379nX5iyxiKaG5c+fWpKgwCatt27Zu4B8oRlgS1dNPP+2tsMIKLi3dkLSbuFl//fW9P//80+UzFzcFCYsEMBJktCEXqDVRYSJv9dVX93788Uc/7/nAMapT3XzzzYlv+CzFbD1r+vTpLq+5olZeYUEaCfCpN5taFBUm8opps7FNEmeffbaflkRaS6Y8Pfjggy6/uZpjcgrLlsSjjz7aJVqrosIkLCLNBx984PKdq1Tq0ccYrj59+rhzIV/p1JopAjNQE+SqwOcUlk48/fTTXYK1LCqZRDFx4sSMgmWB2CQ45u4xrZ9zIL5WRYXp/h966KEu7yUJSyfRr6VEa5k0mcijMAHqlQhMIrNCgxs6aO15tWyKWAyFArmqCaHCkqgYpUBor+XwHjTlddVVV/XHfQfx8ssvZwyxVt2j1k357NChg6+RbOJqIiyVSMhjwgMk1wtxMuWXLox33nnHNZYy2I3H4wEHHOBHp1p/9AVNeW3dunXeuQEZwlK94csvv/TWXHNNl0i9iUomEplpvOGGG/oD8mR6LNSTiRPW0vj222+dVvIKiwMQFh2mXbt2dQnUI3nWgoUKYustSllTvnmS5esz9IWlZ+YRRxzhTq6HymghBpkIrF7FZE0cEMWnTZvm9JJTWPrxqquucic2RNWwMJOwmNhKMwvIKixV1unfYrGJRulsWDaTLqgOvPLKK043WYWlyhfrd+okm1iSjYxSEPAZI9IGje8bhSUas8J66aWXnG7y1rFYoIMTky4s+ViKnxJZ2G8Ny28lCYt1OXWSTSwJlk1MiGSttdbydthhBzee/JxzzvGuuOIK1yJ+2WWXeWeccYa33377eRtttFHGufwtkhpWuNWMsPSYs98xzonp6IiHdTZZPyofqEcy8I7RBwjRpm/TblhuS72wgoJiDNCee+7p3XbbbX7DnAWZQzw0mVjjO72cCIyzOv/88/0+viQVpFJNfAXrlNb4Tr9LIMWaziONVAkrKCgG3DEPTwPLBDKDcPjM1vJrocZfzhFYAoDRkFynmnku1SSUUkUiros5P3XCwmF7XbpQaFPTynKADBB9ChFSLnC+BPbFF1/4Q14gWtdPqgV5kq288srerrvu6p188slu7h9LBLDRAk0CLGn+xBNPuJGtFFIif1j3VCECS5Ww7PWo/yAoTWQAiCmb8+VA4qJrghVVuH5SxRUmKLZ04eXk2Wef9cfnFwoK7EMPPeQGJ6pKgOXLfyqERSbkaKtWrbzzzjvPH2cOoohO+SBxsYoe+bY+JcGCgqLzly43xGQf60CRGFPdUlFexm9BITB648gjj/RFlev+J1pYQbIOOeQQt6WJAAFxC8pCN0h9pHHnv1Cz0YM3YR5jn332mfNVkGCK5Yvjda6AWDfeeGN3vWwcJFZYliwWG3v44YfnXb3yghIghuty01h6CfJEYDXMFjw6e0888cQMQZUqpmwg/ypcdux+mA4SKSyli7hYlUb1KEjK5lyloJJ73HHHZfhaabMFj3XdeXMV4i544gAgZnzgrVP+YIkSFs6IMFrA6ewWbGaqCd00dmeg5x6fRWKlTLwzEOCss87yp/jjW6UKHtfRPQkrZIkRlk2L6WOqnBN6q/HYywX8gaStttqqie9xm65FMwt1HaFSgrKABxU0Lfgi/xIhLIXRZZdd1rvlllvmXSU5USoI1TPOPffcDP/jNBvN2e2M1ZNBtQuexMI4f3YTk59VFRYXVxrUEzTSUKUgqZDg2dKOPIjEuMzWp2iPEjdJKXjygxcsfOSeVk1YVtW8vrMqDUhqlLLQjeVxrY0O4hKXOGY7YS0LxPWr8ejLBd234NIKFRWWzuNmMGRFSBpZuSBx7bjjjhl5itKUJlUEGmYBNzCJ0Zx7h1/s0MpAgIpHLJ1DC7pdMCKJZOWC6lnaICnqepZ4Ymrda6+95q6layYVilpau4M88GSKXVgin80CtIF3tchCyBiZDVohIheJDBYkT6UUsmwmnujjU09D0kUFxN1bb73lHt1ELXiJVVgii23ImOQKKkmWRIQgJIpc4HiOy0aG0mBDKfIVlbDEEyNdNZ6sEH+TAvHFCArygcBiE5bI2muvvSpaSbdiCgM996z9SecqpYxP/q8p4YJEZqH/P/XUUy5v9s2tFFPp5m+aEzTaNU2iAvL3pptucnmhETlyYVmy2DldF812gagQJgSiI49fdmXnLZQ8UH9hpi4t2BDAJ/9ne+DddtvNjR7VnDiA36StvwGCVMFRhbVYszxRZ6sUT3FA/BBteekgT6ztASIRliWLJn+gCBIXSDsoKPrQzjzzTLfqCcIJ+pnPOIdWZdu9xHWUDxZd0w6wpQiLc3Qe/aIgbp7CwDV1XfEo03cSTT7Id7XGqx9T3wdRsLCsqE477TR3TjGOFQvStoKiVfraa691i/srmsjwS6a2tKDxvY7ReXx37LHH+h3iqh9+/vnnbuwTx3Cuji/E7OPz0ksvdenFyVMQ4s1ylw86h89sgBvyoBebSIQFufqeSAFwJA6ylEnh448/di3TjH+3PlkR2e8LMeVH59qXD/L09ddf+yG/mPTFEcNd1I0VF08WcKYbHwR1TjZRZ6gyreg0B/E5adIkN3o2OMuJNMJ8loCoW8FJ2XUsElEpjFNUypBAhXvgwIGubUy+4JsVRLlGOtpgm7Hv9I0BNvBkgVsdY8/JZoqinMc6WsDmJ2pkEwBiYTYTVRWiOwvItWjRokk+4JGoTN1z3333dZGIFx0L67+uw2J09B8+99xz7v8lCcuK6pJLLnHHxSGqoKDYfUvrpMsn+4iJ2iQKOGBvIEr5iiuu6L7LJyx+F2fcSHZMBXE2uwQFy8vGsGHD3DIJeoSHGRzKwn6ndZ3F5q655ho/kiEc3W990uzAJp6gaGFZwuISFWmJJG7oRRdd1ERQ+W5sVKbINXjwYOdPIRMs7G8s+Bp3cwI30d5IZuMw64Z2paBfFBYVSDgM8qjv+J3jdK9lRHBtvA7stYmGTMYA2fIaKiwuqAsx6Axke4aXCusQ6t9iiy38TEFKkIi4TXnmjZGo07179wwegscqynG87RuNQ1S2AAJuKo2t1if81L2z3xdjyq/NMzvZB19uaK6h7guyaSJUWCJt0KBB7jcyFZWoLEk0WvLYU0bKJaZckx+QSX2Sv8UFFhQakw+eeeYZlxdKc5QFT7ARihGuNLQG/YmDMyKZIjKPeOZgAutPLjQRlsKq1vKOUlSWfNqQNCtEGdHf1TJuEMakClqZFTl5TFr/+D/jwjWhNo4oBZQuw5RZd0JzACUo+ROnqWAxrFyTOgp5evnC0jJGJEILNeubR1kKRRKfRAPVaXTzlJFqm24YLfQXX3xxxm/cWMYm6VUbxCEqOFe6jILQcGmsUoKyJnHRgT5r1iznX8HC4m2Akxn1qX61QsNePujZTK9+t27dfIeTEKWChk8InT0LAdPTGa48duxY1x4kcOOjKnQWtjAzXZ6mAvyK65FXqElcbNKFj/ny7wuLyjOv2LQ6gyhExYWVDg1zetOqNkn5DN8QmPrDLMhPFNyEwaarbWawakSpMJO4LrzwQudjrmjthEVEIZI8/vjj7ssowrslCUcUnZJCUi6TjzwK4YI6Dp9xCQqIc4ZG02DJ9RU9rW/VNHyBm2bNmrm2M5CNEycs1nZXw14U5Ikk2nUOOugg36kkPvrCTCWTNzAQp6CAqgq8wqvZRT4kzVTo2AzVPpGC8B+FIIo6g0j69NNPvS5duvjOJPnRFzQVgHXXXdc13IIouAmD+GL4j1YbTKqoZOJHDahhTzhfWFGUSpHEukzaMiXpJIWZCgEhnwIC4oha4osGYvU4pKmqwNsqogordBkRqxyIJHrO1V+VBpLCDGHJ1NkaVipLBTdC6Y0bNy6VW/2q/sdbMwjyU7awIEmiYtU4tU+lVVQyRdpbb73V5U15LBdWVDQnKDqmpf4p0/1lNzQQjOhlCcuSNGLECHchiEobSWEmYTGcBEQhLPjSDbjgggtc+mnlSwWCXoqwJqqShWVFRXMCF1F4tA6k1SQsBhmCYKgvFpAOZ2DAgAEu7bTzpajFyF5gC19JwrKiYhyQLlIrosIkLI3tL0dYKskQTx8s6dYCXxIWM7VAWRGrHkSFiTTbGV8KdB5DT3r27OnSTOObcpjpnrPWhVbKUVQuSlicpHBHbzuJ1qKoMAlLldNShCWuGEPP0BPSqxVRyXTvg2+HRQlLRLHCMYnVqqgwCYvuFVCssMQVPRoMOSGtWhMVJp7Yxwgo3wULSyfYdQ1qVVSYCOPxBQoVlo3qrM6nsfNKr9YsWABVzypIWCLqxhtv9BOrZVFhIowhwMBWTLOBY3QcAwXT2PBZrKmphO1jGMMHKFx5hSVR3XPPPY6gWmpSyGUSw+abb+5XSHPBRjQm9CqdNLZRFWPSAvMwNcKUwpVTWCKLbg0tvFXrRMlEGPMENd8wTGCQKJ6Y9Ko3v3opgORRZru/sgpLZDFqUksn1ouoZMovncQISNEbBP//wAMPuImcHF+LlfRcJp7Gjx/vuICXUGGpnsDqIu3atXMn1XI9IZspzxqXRcSiwNnIRfjXdin2nHoy5fnKK690nIQKC9IQFhUxzV2rR7JkKo1M2lWBAzNmzPCGDh3qD3fhUVBvEV0mfWi6YBNhISqF97jW4Uyjqa7E/j9sG9y5c2c3Vku/13PBw5T/gw8+2GmnibAkKmb2cmBDVPMtLBpBqERXzyZhsbE7yKi8q7L+yCOPOBIbpDU18cJng5v5JmExNQxQZXDCUt2BJXDq9Q2wYaWbhMUEC0CVagH+wZipYyc/2BMb1rBcJr2ol8IJS4/AbHvUpdF4TAUt7LiGRWMSFut/CH4dixkXqkMET0yyIRr5TaHIJiK+53eOawgtWssprDj3j4naEAZ+ZvOV71m3irVA+Qw7ju8a9choTPxmCIvnIUhDY2hYRG3evLlrV2JNq1GjRrmNj5j+zaxiBvmz9OSUKVPc2hGMze/Ro4e/0AaW5PymxVIpLEUn+/hiZggNlUw3szvgFwomoQ4fPtxbbbXV/GvU8uNR+aNgyqLMc6qERaaDvlAPJCppdrJAHngJoYGXT5pPgqbf+VugL7R///4Z17TXS6NJQIXWJ/UUKOTYbKb7lHhhWR9YYbB3795ufxsLicUKpVBwjnoZAAMYqYtxvTSKC58ljrDfyVubNm28tm3buuW3Wf6Aka2IKngsaYR9n8t03cQKSyGavxFUv3793LqbFqWKKQzkXQJjgQtugPUh6SZB2e/gjRWPGXExevRoNzya9duJznPmzHErALGwHmvZsxAJdc8hQ4Y4UWjEK0a6hfKQWGEFCWKYijaKBIgJiwsaUsv65ly/GhwUY0G++Ltr165uixVeXGw0LgbTp093S2QS1Wza+jub6ZhECctej7c7bWcLiExRRad80M3o27dvE7+SYkFBMRyYvYDsmqiCCqMiPPc5aHzP7+Sd/wtsE8ikGXXvcc1c0Us+JUJYOKpnOQQxokJrUVVSUILI55FB/cP6lwSz94Xh0jy+NMZcsCIqBZxrox3p9+rVy10TPrKJKzHCstdgejabWQuQUy3o2uyQEfSzWsbNlB/Un5jyT9ucIDFFCTRhBWYXMAkTV9WFZUmi1GkxCRAMx9UA18fYiKh169a+zzYPlTQbMVkunR27hDgEFQTpq7Dx5sy9C3u5qaqwLEkMr9DS1jgfN0HFQERWu1Ne94G15YmgiiCVEJQF+tC1r7/+et83K66qCUtp8snePCJGNzFJwCc4mTx5cmjprISJr/bt28e+WUGhkLjsQjBBf0OFFVcntNJj3zxGpwKumaQoZYFvGC8SbCKA75WqxNuqAn2aPJJBUqoJEja+4aN8raiwLElEQ1U4k0BSPohAOrbxvxKPQxsd2bjKPvqSAgUD3haZnYS/+F0xYVmSuDkswA+SRFIu6Kay/ih5iKqwZTNFRDhjyU0hiVFd93DkyJHOZ7ipiLBEEp+XX365Sxsk9dEXBvk6bdo0P1qpoERt4pvhP5pJzM1LalTHL/iht6JDhw7Ody1oHJuwdC7jne677z6XbpJJygb5Sws0nbfkKQ5hiS9auNlmDyhaJhmKWnfeeafzX4UvFmEpcXab540KpIGkbBAvWomvnAIXZuKLfjkGIoK08AU3GC84dHgrT6HC0rZypRAokli5Tq3oaRYVUKnUhknKYxSmtDp27JjxUpMmiB8tw45FKiyRxD6HrLUJdNE0Qzc66oZSpcOO81oeKY18qR7Klr7LLbecnyehLGHpWM5Vm0stiApIWFH1G1JHUxoMq6b+BtLMl8TFQEzyRXVKKFlYKnkMM5k7d65LI01vfvmgGz5mzBiXz3KEhahU+R84cKAv2rTzJY5Uiae9UihJWBIVIzx1fi2JCoi022+/3eW1VGHZNj021hTEW5qhPFAFYqodM+mFooVlIxXnYrUmKiBhsfYq+S1FWDqH4S504ALSrQVRCcoLa7V26tTJ/Q18YWkT8FwESlQsqo+YalVUQMJiCUjyXKywdHzLli3duHKgNGsJyhPjxOg0FwoWlkTF4q20utayqIAImzBhgst3McISV8yGqYU2vVwQTzfccIPbdlgoSFj6jsoZe8KAWhYVEGFswG45yGX2zY/mF5aFArUqKiAdMLyH6pSQV1j6PxMd1KRQ66ICyiOzhcSBKuFhpj5SrE+fPjXRnFAIpB9GPNCYrBlPOYWlv9kEm4YwUA+iAuJl5syZbrIHPIQJi+/06IMv1ocQ6oUrgKB47Cs6ZxWWSmCrVq3cxEZQ66UvCHETtsSTfexh7HjPevAAQencekWosCANIpkZPHHiRPd7vYkKqPSxdzPcMDwEfqygiFaMOUtz90xUsBE6VFgibuzYse63Wq585gLcYCyjycKtEhPGctx0zbz44ovzjq5vUQXRRFg05vFpF4OvZ4gfhogwBWrw4MEugk2dOtV9DxqPvqbwhcWroiqnlES+pwQ2CJsvriAQVD1V0IuBL6zu3bs7UTFwa/bs2Y7MBmnzoYIma3CTG76wGEtDRyLjvEGDuAbKgS8sXqlZTwk0KqENlAu3ajLTs+gTA41I1UAUcMJS1GqggWjgef8HVUMIG+GR9bMAAAAASUVORK5CYII=" InformativeScreenshot="eb89711ec8f1aaf1d43fa2a5708e6def.jpg" Reference="_2sUeFM9PEmAlfpT6_ACAQ/-OJG6UtCgUuBsBg29Ifxaw" Selector="&lt;html app='chrome.exe' title='Login - Macmillan Education Everywhere' /&gt;" Title="Login - Macmillan Education Everywhere" Url="https://identity.macmillaneducationeverywhere.com/authentication/login?ReturnUrl=%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3D21%26redirect_uri%3Dhttps%253A%252F%252Fliveapi.macmillaneducationeverywhere.com%252Fapi%252Foidcintegration%252Fcode%26response_type%3Dcode%26scope%3Dopenid%2520profile%2520offline_access%26code_challenge_method%3DS256%26code_challenge%3Dr7i7-KOEkxPYgXTh1SavR46e_ou4PqiaokE3p9XZMeI%26state%3De32fc13d-0306-43dd-ae5a-8d14417cd2f5" Version="V1" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>
